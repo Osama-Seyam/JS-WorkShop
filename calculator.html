@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="App/Css/calc.css" />
+    <link rel="stylesheet" href="App/Css/bootstrap.css" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container col-3">
+      <form name="calc">
+        <table class="table">
+          <tr>
+            <input
+              style="margin-right: 20px"
+              type="text"
+              calss="form-control"
+              name="result"
+              id=""
+            />
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="1"
+                onclick="calc.result.value += '1'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="2"
+                onclick="calc.result.value += '2'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="3"
+                onclick="calc.result.value += '3'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="+"
+                onclick="calc.result.value += '+'"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="4"
+                onclick="calc.result.value += '4'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="5"
+                onclick="calc.result.value += '5'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="6"
+                onclick="calc.result.value += '6'"
+              />
+            </td>
+
+            <td>
+              <input
+                type="button"
+                value="-"
+                onclick="calc.result.value += '-'"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="7"
+                onclick="calc.result.value += '7'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="8"
+                onclick="calc.result.value += '8'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="9"
+                onclick="calc.result.value += '9'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="*"
+                onclick="calc.result.value += '*'"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                value="0"
+                onclick="calc.result.value += '0'"
+              />
+            </td>
+            <td>
+              <input type="button" value="C" onclick="calc.result.value = ''" />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="/"
+                onclick="calc.result.value += '/'"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                value="="
+                onclick="calc.result.value = eval(calc.result.value)"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <!-- js files -->
+    <script src="App/JS/BootStrap/jquery.slim.min.js"></script>
+    <script src="App/JS/BootStrap/popper.min.js"></script>
+    <script src="App/JS/BootStrap/bootstrap.min.js"></script>
+    <script src="App/JS/calc.js"></script>
+  </body>
+</html>

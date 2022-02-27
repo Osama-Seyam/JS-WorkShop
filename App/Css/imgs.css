@@ -1,0 +1,8 @@
+.smol-imgs img {
+    width: 145px;
+    border: 1px solid black;
+}
+
+.preview img {
+    width: 600px;
+}

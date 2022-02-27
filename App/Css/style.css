@@ -1,0 +1,28 @@
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+button {
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:after {
+    content: "+";
+    font-size: 20px;
+    float: right;
+}
+
+.active:after {
+    content: "-";
+}
+
+.disc {
+    padding: 0px 15px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s;
+}
